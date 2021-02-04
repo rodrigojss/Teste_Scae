@@ -1,0 +1,42 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iis": {
+      "applicationUrl": "http://localhost/Teste_Scae",
+      "sslPort": 0
+    },
+    "iisExpress": {
+      "applicationUrl": "http://localhost:17324/",
+      "sslPort": 0
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "api/values",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "Teste_Scae": {
+      "commandName": "IIS",
+      "launchBrowser": true,
+      "launchUrl": "api/Usuario",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "Chave": "Valor"
+      },
+      "applicationUrl": "http://localhost:17323/"
+    },
+    "Docker": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/api/Usuario",
+      "environmentVariables": {
+        "Chave": "Valor"
+      }
+    }
+  }
+}
